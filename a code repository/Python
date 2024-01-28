@@ -1,1 +1,22 @@
-print("Hello, World")
+def basic_calculator(num1, num2, operation):
+    if operation == '+':
+        return num1 + num2
+    elif operation == '-':
+        return num1 - num2
+    elif operation == '*':
+        return num1 * num2
+    elif operation == '/':
+        try:
+            return num1 / num2
+        except ZeroDivisionError:
+            return "Error: Division by zero."
+    else:
+        return "Invalid operation."
+
+# Example usage
+print(basic_calculator(100, 5, '+'))  # 加法
+print(basic_calculator(100, 5, '-'))  # 减法
+print(basic_calculator(100, 5, '*'))  # 乘法
+print(basic_calculator(100, 5, '/'))  # 除法
+print(basic_calculator(100, 0, '/'))  # 除以零的情况
+print(basic_calculator(100, 5, '^'))  # 非法运算符的情况
