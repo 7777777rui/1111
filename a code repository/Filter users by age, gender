@@ -1,0 +1,31 @@
+# Example user data
+users = [
+    {"name": "Alice", "age": 25, "gender": "female"},
+    {"name": "Bob", "age": 30, "gender": "male"},
+    {"name": "Carol", "age": 22, "gender": "female"},
+    {"name": "Dave", "age": 35, "gender": "male"}
+]
+
+# Function to filter users
+def filter_users(users, age=None, gender=None):
+    filtered_users = users
+    if age is not None:
+        filtered_users = [user for user in filtered_users if user['age'] == age]
+    if gender is not None:
+        filtered_users = [user for user in filtered_users if user['gender'] == gender]
+    return filtered_users
+
+# Example usage
+# Filter all users who are 25 years old
+users_age_25 = filter_users(users, age=25)
+
+# Filter all female users
+female_users = filter_users(users, gender="female")
+
+# Filter all 25-year-old female users
+female_users_age_25 = filter_users(users, age=25, gender="female")
+
+# Print results
+print("All users aged 25:", users_age_25)
+print("All female users:", female_users)
+print("All 25-year-old female users:", female_users_age_25)
