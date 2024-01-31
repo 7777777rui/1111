@@ -1,0 +1,21 @@
+# Example list of products
+products = [
+    {"name": "Product A", "price": 50},
+    {"name": "Product B", "price": 30},
+    {"name": "Product C", "price": 20},
+    {"name": "Product D", "price": 40}
+]
+
+# Function to sort products by price
+def sort_products_by_price(products, ascending=True):
+    return sorted(products, key=lambda x: x['price'], reverse=not ascending)
+
+# Sort products in ascending order of price
+sorted_products_ascending = sort_products_by_price(products, True)
+
+# Sort products in descending order of price
+sorted_products_descending = sort_products_by_price(products, False)
+
+# Print results
+print("Sorted in ascending order:", sorted_products_ascending)
+print("Sorted in descending order:", sorted_products_descending)
