@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Page Font Example</title>
+    <style>
+        /* CSS to set font styles */
+        body {
+            font-family: Arial, sans-serif; /* Use Arial font, fallback to any sans-serif font if not available */
+        }
+
+        .fancy-font {
+            font-family: "Times New Roman", Times, serif; /* Use Times New Roman font, or fallback to serif fonts */
+        }
+
+        .custom-font {
+            font-family: "Courier New", Courier, monospace; /* Use Courier New font, or fallback to monospace fonts */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Default Font</h1>
+<p>This is a text paragraph with the default font.</p>
+
+<h1 class="fancy-font">Serif Font</h1>
+<p class="fancy-font">This is a text paragraph with a serif font.</p>
+
+<h1 class="custom-font">Monospace Font</h1>
+<p class="custom-font">This is a text paragraph with a monospace font.</p>
+
+</body>
+</html>
