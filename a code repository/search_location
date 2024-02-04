@@ -1,0 +1,18 @@
+from geopy.geocoders import Nominatim
+
+def search_location(location_name):
+    # 初始化地理编码器
+    geolocator = Nominatim(user_agent="geoapiExercises")
+
+    # 获取位置数据
+    location = geolocator.geocode(location_name)
+
+    if location:
+        return (location.latitude, location.longitude)
+    else:
+        return "Location not found"
+
+# 测试搜索
+location_name = "Eiffel Tower"
+coordinates = search_location(location_name)
+print(f"Coordinates of {location_name}: {coordinates}")
