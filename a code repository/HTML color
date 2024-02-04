@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>示例网页</title>
+    <style>
+        /* CSS 用于更改标题颜色 */
+        h1 {
+            color: blue; /* 您可以将'blue'改为任何您喜欢的颜色 */
+        }
+    </style>
+</head>
+<body>
+
+<h1>这是一个标题</h1>
+<p>这是一段普通的文本。</p>
+
+</body>
+</html>
