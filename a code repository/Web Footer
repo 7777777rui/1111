@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Web Page</title>
+    <style>
+        /* Footer CSS styles */
+        .footer {
+            background-color: #333; /* Background color */
+            color: white; /* Font color */
+            text-align: center; /* Text alignment */
+            padding: 20px; /* Padding */
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Web page content -->
+
+<!-- Footer section -->
+<footer class="footer">
+    <p>Contact us: email@example.com</p>
+    <p>&copy; 2024 Web Page Footer Example. All rights reserved.</p>
+    <p>Follow us: 
+        <a href="#">Facebook</a>, 
+        <a href="#">Twitter</a>, 
+        <a href="#">Instagram</a>
+    </p>
+</footer>
+
+</body>
+</html>
